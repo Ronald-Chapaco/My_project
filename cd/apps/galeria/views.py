@@ -49,20 +49,6 @@ class FotoDetalle(DetailView):
             if(comentario.is_valid()):
                 comentario.save()
                 return HttpResponseRedirect('/galeria/ListaFotos')
-        # id=self.get_object().id
-        # if request.method == "POST":
-        #     formu = ComentarioForm(request.POST)
-        #     if formu.is_valid():
-        #         formu.save()
-        #         #return HttpResponseRedirect('/galeria/Categoria')
-        # form = ComentarioForm()    
-        # return render_to_response('galeria/FotoDetalle.html', {'id':id, 'formu':formu}, context_instance=RequestContext(request))
-        #return render(request, 'galeria/FotoDetalle.html', {'id':id })
-        # else        
-        #     form = ComentarioForm
-        # return render_to_response('galeria/FotoDetalle.html', {'form':form,'id':pk}, context_instance=RequestContext(request))
-        # #return redirect('lista-fotos',form='form', pk=self.get_object().id)
-        # #return render(request, 'galeria/FotoDetalle.html', {'form': form, 'id':id })
 
 class ActualizarFoto(UpdateView):
     model = Fotos
