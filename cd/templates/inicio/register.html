@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+
+
+{# Display a form #}
+{% block contenido %}
+<h1>Formulario de Registro</h1>
+<form action="" method="post" class="form">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+        <button type="submit" class="btn btn-primary">
+             Submit
+        </button>
+
+</form>
+{% endblock %}

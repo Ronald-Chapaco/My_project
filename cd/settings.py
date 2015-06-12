@@ -39,6 +39,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'cd.apps.inicio',
     'cd.apps.galeria',
+    'cd.apps.perfildeorganizacion',
+    # 'bootstrap3',
+    'captcha',
 )
 
 from django.core.urlresolvers import reverse_lazy
@@ -110,3 +113,18 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'cd/media/')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'cd/static'),)
+
+RECAPTCHA_PUBLIC_KEY = '6LdevAcTAAAAABX8q7rgW2MdSPmx42yx126lh2Wo'
+RECAPTCHA_PRIVATE_KEY = '6LdevAcTAAAAAI5chXYBWp2icSkV07fYXAAJgJYy'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ronaldolguin773@gmail.com'
+EMAIL_HOST_PASSWORD = 'dtiqwgavgmsshcxd'
+EMAIL_USE_TLS = True
+
+EMAIL_USE_TLS =  True 
+EMAIL_HOST =  'smtp-mail.outlook.com' 
+EMAIL_HOST_USER =  'friends_77_3@hotmail.com' 
+EMAIL_HOST_PASSWORD =  'xperia' 
+EMAIL_PORT =  25

@@ -49,6 +49,7 @@
                 <div class="panel-body">
                     {% for p in object.comentario_set.all %}
                         <div >
+                                {{ p.user }}=>
                                 {{ p.contenido }}
                         </div>
                     {% endfor %}
